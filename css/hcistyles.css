@@ -1,0 +1,221 @@
+@import url('../css/fonts.css');
+
+html,body{
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden; 
+}
+
+:root{
+	--VarelaRound:'VarelaRound', "Comic Sans MS", cursive, sans-serif;
+	
+	/* Theme Colors */
+	--text-black: #000000;
+	--text-gold: #B38A4C;
+	--text-white: #FFFFFF;
+}
+
+
+
+
+
+/*------------Global Classes-------------*/
+
+a {
+	text-decoration: none;
+	color: var(--text-black);
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.ul{
+	list-style-type: none;
+}
+
+h1{
+	font-family: var(--VarelaRound);
+	font-size: 3.5rem;
+}
+
+h3{
+	font-family: var(--VarelaRound);
+	font-size: 1.5rem;
+}
+
+.text-gray{
+	color: var(--text-gray);
+}
+/*-----x------Global Classes-------x-----*/
+
+
+
+/*------------NavBar-------------*/
+.nav{
+	background: white;
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 20vh;
+	overflow: hidden;
+}
+
+.nav .nav-items .nav-link{
+	padding-top: 1.6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: .5rem;
+	font-size: 1rem;
+	position: relative;
+}
+
+.nav .nav-items{
+	display: flex;
+	margin: 0;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 0;
+	list-style-type: none;
+	font-family: var(--VarelaRound);
+}
+
+.nav .nav-items .nav-link:hover{
+	border-bottom: 0.1rem solid var(--text-gold);
+}
+
+.nav .nav-items .nav-link{
+	border-bottom: 0.1rem solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav .nav-items .nav-link a{
+	color: black;
+	transition: color 0.25s;
+}
+
+.nav .nav-items .nav-link a:hover{
+	color: var(--text-gold);
+}
+
+
+.nav .nav-brand .nav-name {
+	font-size: 1.6rem;
+	padding: 0.5rem 0;
+	display: block;
+	font-family: var(--VarelaRound);
+}
+
+.nav .nav-brand .nav-sub {
+	font-size: 1rem;
+	padding: 0 0;
+	display: block;
+	font-family: var(--VarelaRound);
+}
+
+.nav .nav-menu{
+	justify-content: space-between;
+}
+
+
+/*------x-----NavBar--------x----*/
+
+
+
+/*------x-----Main Content--------x----*/
+
+.materials{
+	background-color: #F0F0F0 ;
+	color: var(--text-gold);
+	text-align: left;
+	padding: 7rem;
+}
+
+.materials .text{
+	font-family: var(--VarelaRound);
+	font-size: 1.25rem;
+}
+
+
+
+main .steps{
+	background-color: var(--text-gold);
+	color: white;
+	font-family: var(--VarelaRound);
+	width: 100%
+}
+
+main .steps .step{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	padding-bottom: 2rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+main .steps > .img-side, .steps{
+	padding: 1rem 2rem;  
+	position: relative;
+}
+
+main .steps .steps-name{
+	padding-left: 3rem;
+	font-size: 2rem;
+}
+
+main .steps .step{
+	padding-bottom: 2rem;
+}
+
+main .steps .step .sidebar .steps .instructions .list-items{
+	padding-top: .7rem;
+}
+
+main .steps .step .sidebar .steps .instructions .indented{
+	padding-bottom: .7rem;
+	padding-top: .2rem;
+	list-style-type: circle;
+}
+
+main .steps .step .sidebar .steps .instructions .temp-indented{
+	padding-top: .2rem;
+	list-style-type: circle;
+}
+
+
+
+
+
+
+
+
+/*------x-----Main Content--------x----*/
+
+
+
+
+
+
+
+/*-----------Footer----------------*/
+
+footer .footer{
+	height: 100%;
+	background:white;
+	position: relative;
+}
+
+footer .container{
+	padding: 2rem;
+	font-family: var(--VarelaRound);
+	text-align: center;
+}
+
+footer .container a{
+	transition: color 0.5s;
+}
+
+footer .container a:hover{
+	color: var(--text-gold); 
+}
+/*-----------Footer----------------*/

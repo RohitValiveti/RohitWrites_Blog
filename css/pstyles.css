@@ -1,0 +1,284 @@
+@import url('../css/fonts.css');
+
+html,body{
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden; 
+}
+
+:root{
+	--VarelaRound:'VarelaRound', "Comic Sans MS", cursive, sans-serif;
+	
+	/* Theme Colors */
+	--text-black: #000000;
+	--text-gold: #B38A4C;
+	--text-white: #FFFFFF;
+}
+
+/*------------Global Classes-------------*/
+
+a {
+	text-decoration: none;
+	color: var(--text-black);
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.ul{
+	list-style-type: none;
+}
+
+h1{
+	font-family: var(--VarelaRound);
+	font-size: 3.5rem;
+}
+
+h3{
+	font-family: var(--VarelaRound);
+	font-size: 1.5rem;
+}
+
+.text-gray{
+	color: var(--text-gray);
+}
+/*-----x------Global Classes-------x-----*/
+
+
+/*------------NavBar-------------*/
+.nav{
+	background: white;
+	padding: 0 2rem;
+	height: 0rem;
+	min-height: 20vh;
+	overflow: hidden;
+}
+
+.nav .nav-items .nav-link{
+	padding-top: 1.6rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: .5rem;
+	font-size: 1rem;
+	position: relative;
+}
+
+.nav .nav-items{
+	display: flex;
+	margin: 0;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 0;
+	list-style-type: none;
+	font-family: var(--VarelaRound);
+}
+
+.nav .nav-items .nav-link:hover{
+	border-bottom: 0.1rem solid var(--text-gold);
+}
+
+.nav .nav-items .nav-link{
+	border-bottom: 0.1rem solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav .nav-items .nav-link a{
+	color: black;
+	transition: color 0.25s;
+}
+
+.nav .nav-items .nav-link a:hover{
+	color: var(--text-gold);
+}
+
+
+.nav .nav-brand .nav-name {
+	font-size: 1.6rem;
+	padding: 0.5rem 0;
+	display: block;
+	font-family: var(--VarelaRound);
+}
+
+.nav .nav-brand .nav-sub {
+	font-size: 1rem;
+	padding: 0 0;
+	display: block;
+	font-family: var(--VarelaRound);
+}
+
+.nav .nav-menu{
+	justify-content: space-between;
+}
+
+
+/*------x-----NavBar--------x----*/
+
+
+
+/*------x-----Main Content--------x----*/
+
+.overview{
+	background-color: var(--text-gold);
+	color: white;
+	text-align: left;
+	padding: 7rem;
+}
+
+.overview .text{
+	font-family: var(--VarelaRound);
+	font-size: 1.25rem;
+}
+
+
+
+/*------x-----Left--------x----*/
+main .left-content{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	background-color: #ffffff;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+main .post-content{
+	width: 100%
+	margin-bottom: .25rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-top: .25rem;
+}
+
+main .left-content .post-content > .post-image, .post-title{
+	padding: 1rem 2rem;  
+	position: relative;
+}
+
+main .left-content .post-content > .post-image .post-info{
+	background: linear-gradient(to right, #b38a4c 0%, #ffffff 75%);
+	padding: 1rem;
+	border-radius: 3rem;
+	margin-top: 0.3rem;
+	font-family: var(--VarelaRound); 
+}
+
+main .left-content .post-content> .post-image > .post-pic{
+	overflow: hidden;
+}
+
+main .left-content .post-content > .post-image .post-info span{
+	margin: 0 .5rem;
+}
+
+
+
+main .left-content .sidebar .post-title a{
+	font-family: var(--VarelaRound);
+	font-size:2.5rem;
+	color: #b38a4c;
+}
+
+main .left-content .sidebar .post-title,.findtext{
+	color: #b38a4c;
+	font-family: var(--VarelaRound);
+	text-align: left;
+	line-height: 200%;
+}
+
+
+
+
+/*------x-----Right--------x----*/
+main .right-content{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	background-color: #B38A4C;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+main .right-content{
+	width: 100%
+}
+
+main .right-content .post-content > .post-image, .post-title{
+	padding: 1rem 2rem;  
+	position: relative;
+}
+
+main .right-content .post-content > .post-image .post-info{
+	background: linear-gradient(to right, #ffffff 0%, #b38a4c 75%);
+	padding: 1rem;
+	border-radius: 3rem;
+	margin-top: 0.3rem;
+	font-family: var(--VarelaRound); 
+}
+
+main .right-content .post-content> .post-image > .post-pic{
+	overflow: hidden;
+}
+
+
+main .right-content .post-content > .post-image .post-info span{
+	margin: 0 .5rem;
+}
+
+
+main .right-content .sidebar{
+  	top: 50%;
+  	-ms-transform: translateY(25%);
+  	transform: translateY(25%);
+}
+
+main .right-content .sidebar .post-title a{
+	font-family: var(--VarelaRound);
+	font-size:2.5rem;
+	color: #ffffff;
+
+}
+
+main .right-content .sidebar .post-title,.findtext{
+	color: white;
+	font-family: var(--VarelaRound);
+	text-align: left;
+	line-height: 200%;
+}
+
+
+
+
+
+
+
+
+/*------x-----Main Content--------x----*/
+
+
+
+
+
+
+
+/*-----------Footer----------------*/
+
+footer .footer{
+	height: 100%;
+	background:white;
+	position: relative;
+}
+
+footer .container{
+	padding: 2rem;
+	font-family: var(--VarelaRound);
+	text-align: center;
+}
+
+footer .container a{
+	transition: color 0.5s;
+}
+
+footer .container a:hover{
+	color: var(--text-gold); 
+}
+/*-----------Footer----------------*/
